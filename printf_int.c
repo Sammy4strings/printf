@@ -21,7 +21,6 @@ int printf_int(va_list args)
 		last = -last;
 		i++;
 	}
-
 	if (num > 0)
 	{
 		while (num / 10 != 0)
