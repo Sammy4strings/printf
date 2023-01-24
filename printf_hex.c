@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
  * printf_hex - prints an hexgecimal number.
  * @val: arguments.
  * Return: counter.
- */
+*/
 int printf_hex(va_list val)
 {
 	int i;
@@ -26,6 +25,7 @@ int printf_hex(va_list val)
 		array[i] = temp % 16;
 		temp /= 16;
 	}
+
 	for (i = counter - 1; i >= 0; i--)
 	{
 		if (array[i] > 9)

@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- * printf_hex_aux - prints an hexgecimal number.
- * @num: arguments.
- * Return: counter.
+ * printf_hex_aux - prints an hexgecimal number
+ * @num: arguments
+ * Return: counter
  */
 int printf_hex_aux(unsigned long int num)
 {
@@ -25,6 +24,7 @@ int printf_hex_aux(unsigned long int num)
 		array[i] = temp % 16;
 		temp /= 16;
 	}
+
 	for (i = counter - 1; i >= 0; i--)
 	{
 		if (array[i] > 9)
